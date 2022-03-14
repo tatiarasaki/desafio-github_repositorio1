@@ -1,0 +1,48 @@
+### Git + Github
+
+- Controle de versão
+- Armazenamento em nuvem
+- Trabalho em equipe
+- Melhorar seu código
+- Reconhecimento
+
+## Comandos
+cd /
+cd windows
+cd..
+cls
+TAB tem a função de autocompletar
+mkdir
+dir
+
+### SHA1
+
+- Secure Hash Agorithm (desenvolvido pela NSA - Agênca de Segurança Nacional dos EUA)
+- Conjunto de funções hash criptográficas
+- Embaralha o arquivo de forma muito específica
+- Gera um conjunto de caracteres de 40 dígitos (serve como identificação)
+- Importante pq ele gera o conjunto de caracteres e se vc muda uma vírgula no arquivo, ele traz uma chave diferente. Se vc altera para o modo anterior e apresenta a chave anterior. Por isso é visto como muito seguro.
+- Forma curta de representar um estado de um arquivo.
+
+opensssl sha1 *nome do arquivo*
+
+Esse código garante que saibamos se o arquivo foi modificado ou não.
+
+### Objetos fundamentais
+
+- BLOBS
+    
+    Guarda o sha1 do arquivo
+
+- TREE
+    
+    Armazena BLOBS
+    
+    Também guarda nome do arquivo
+    
+    Elas também têm um sha1 dos metadados das árvores.
+
+Portanto se muda uma vírgula muda toda a estrutura dessa árvore.
+
+- COMMITS
+Se vc alterar (um arquivo) uma BLOB, vai consequentemente alterar a TREE e vai alterar o COMMIT. Aí mais uma prova de que o GIT é um sistema distribuído seguro, já que uma alteração mudará toda a estrutura.
