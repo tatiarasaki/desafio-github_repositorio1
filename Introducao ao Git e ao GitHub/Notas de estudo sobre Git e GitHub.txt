@@ -31,18 +31,38 @@ Esse código garante que saibamos se o arquivo foi modificado ou não.
 ### Objetos fundamentais
 
 - BLOBS
-    
+
     Guarda o sha1 do arquivo
 
 - TREE
-    
+
     Armazena BLOBS
-    
+
     Também guarda nome do arquivo
-    
+
     Elas também têm um sha1 dos metadados das árvores.
 
 Portanto se muda uma vírgula muda toda a estrutura dessa árvore.
 
 - COMMITS
 Se vc alterar (um arquivo) uma BLOB, vai consequentemente alterar a TREE e vai alterar o COMMIT. Aí mais uma prova de que o GIT é um sistema distribuído seguro, já que uma alteração mudará toda a estrutura.
+
+###SSH Key e Token
+  Criei uma chave e um token temporário. Esse último para ser usado para baixar o projeto em HTML.
+
+  ## Iniciando o GIT e criando um COMMIT
+
+  - Iniciar o GIT
+    - git init
+  - Iniciar o versionamento
+    - git add
+  - Criar um commit
+    - git commit
+
+  ## Ciclo de vida
+
+  Quando vc dá um GIT ADD *, ele vai para a área de staged.
+
+  Quando voc~e faz o commit, vc move os arquivos que estavam na área de staged e coloca elas para o unmodified e popula o seu repositório local.
+
+  O repositório local é feito de commits.
