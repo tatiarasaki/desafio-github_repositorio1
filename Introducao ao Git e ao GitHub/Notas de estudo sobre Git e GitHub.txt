@@ -48,7 +48,7 @@ Portanto se muda uma vírgula muda toda a estrutura dessa árvore.
 Se vc alterar (um arquivo) uma BLOB, vai consequentemente alterar a TREE e vai alterar o COMMIT. Aí mais uma prova de que o GIT é um sistema distribuído seguro, já que uma alteração mudará toda a estrutura.
 
 ###SSH Key e Token
-  Criei uma chave e um token temporário. Esse último para ser usado para baixar o projeto em HTML.
+  Criei uma chave e um token temporário. Esse último para ser usado para baixar o projeto usando HTTPS.
 
   ## Iniciando o GIT e criando um COMMIT
 
